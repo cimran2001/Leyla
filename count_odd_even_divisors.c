@@ -5,7 +5,7 @@
 int main() {
     unsigned number;
     printf("Enter a number: ");
-    scanf("%d%*c", &number);
+    scanf("%u%*c", &number);
 
     int odds = 0, evens = 0;
     for (int i = 1; i <= number; i++) {
