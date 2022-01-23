@@ -5,7 +5,7 @@ int main() {
     int number;
     printf("Enter a number: ");
     scanf("%d%*c", &number);
-
+    
     int min = number % 10;
     number /= 10;
 
