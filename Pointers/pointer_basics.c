@@ -14,7 +14,6 @@ int main() {
 
     int **p_p_x = &p_x;
 
-
     void *pointer = NULL;
 
     // printf("p_p_x address: \t\t%p\n", &p_p_x);

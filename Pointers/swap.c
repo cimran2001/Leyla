@@ -9,7 +9,8 @@ int main() {
 
     printf("x = %d, y = %d\n", x, y);
 
-    swap(NULL, &y);
+    // swap(NULL, &y);
+    swap(&x, &y);
 
     printf("x = %d, y = %d\n", x, y);
 
