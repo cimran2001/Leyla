@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 typedef struct {
-    int numer;
-    int denom;
+    int numer; // numerator => числитель
+    int denom; // denominator => знаменатель
 } Fraction;
 
 Fraction createFraction(int numer, int denom);
@@ -13,7 +13,15 @@ void printFraction(Fraction f);
 
 
 int main() {
-    Fraction f = createFraction(18, 36);
+    int numer, denom;
+
+    printf("Enter numer: ");
+    scanf("%d", &numer);
+
+    printf("Enter denom: ");
+    scanf("%d", &denom);
+
+    Fraction f = createFraction(numer, denom);
 
     Fraction simplified = simplifyFraction(f);
 
