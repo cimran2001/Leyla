@@ -61,7 +61,7 @@ Point createPoint(float x, float y, float z) {
 float getMinX(Point points[MAX_COUNT], size_t count) {
     if (count == 0)
         return 0;
-
+    
     float minX = points[0].x;
 
     for (size_t i = 1; i < count; i++)
@@ -120,7 +120,6 @@ float getMinZ(Point points[MAX_COUNT], size_t count) {
 
     return minZ;
 }
-
 float getMaxZ(Point points[MAX_COUNT], size_t count) {
     if (count == 0)
         return 0;

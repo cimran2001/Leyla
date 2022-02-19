@@ -28,12 +28,14 @@ int main() {
         scanf("%d%d", &numer, &denom);
 
         fractions[i] = createFraction(numer, denom);
-    }
+    }    
 
-    printFraction(simplifyFraction(fractions[0]));
-    printFraction(simplifyFraction(fractions[1]));
+    printFraction(fractions[0]);
+    printFraction(fractions[1]);
 
-    printFraction(addFractions(fractions[0], fractions[1]));
+    Fraction sum = addFractions(fractions[0], fractions[1]);
+    printFraction(sum);
+    
     printFraction(subtractFractions(fractions[0], fractions[1]));
     printFraction(multiplyFractions(fractions[0], fractions[1]));
     printFraction(divideFractions(fractions[0], fractions[1]));
@@ -50,11 +52,6 @@ Fraction createFraction(int numer, int denom) {
     
     fraction.numer = numer;
     fraction.denom = denom;
-
-    if (denom == 0) {
-        fraction.numer = 0;
-        fraction.denom = 1;
-    }
 
     return simplifyFraction(fraction);
 }
@@ -103,9 +100,6 @@ Fraction multiplyFractions(Fraction fraction1, Fraction fraction2) {
 }
 
 Fraction divideFractions(Fraction fraction1, Fraction fraction2) {
-    if (fraction2.numer == 0)
-        return createFraction(0, 1);
-
     return createFraction(fraction1.numer * fraction2.denom, fraction1.denom * fraction2.numer);
 }
 
