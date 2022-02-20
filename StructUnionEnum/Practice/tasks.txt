@@ -1,0 +1,9 @@
+1. Person struct
+Add person 
+Edit person 
+Print person 
+
+2. Hotel struct
+Apartment struct
+Create hotel 
+Order apartment 
