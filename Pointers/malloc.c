@@ -11,5 +11,7 @@ int main() {
     printf("Value of x: %d\n", *p_x);
 
     free(p_x);
+    p_x = NULL;
+
     return 0;
 }
