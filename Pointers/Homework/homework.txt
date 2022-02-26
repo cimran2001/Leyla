@@ -1,0 +1,2 @@
+1. Redo Hotel
+Now using pointers.
