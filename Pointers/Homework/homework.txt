@@ -1,2 +1,6 @@
 1. Redo Hotel
 Now using pointers.
+Hotel -> dynamic array of two hotels
+Apartments -> dynamic array of 100 apartments
+
+2. Fix printHotel function.

@@ -10,25 +10,26 @@ int main() {
         printf("3rd element - %d\n", *(*(&array + 1) - 3));
     }
 
+    if (true) {
+        size_t elementsCount;
+        printf("How many elements do you want in array? ");
+        scanf("%zu", &elementsCount);
 
-    size_t elementsCount;
-    printf("How many elements do you want in array? ");
-    scanf("%zu", &elementsCount);
+        int *array = (int *)calloc(elementsCount, sizeof(int));
+        // int *array = (int *)malloc(elementsCount * sizeof(int));
 
-    int *array = (int *)calloc(elementsCount, sizeof(int));
-    // int *array = (int *)malloc(elementsCount * sizeof(int));
+        for (size_t i = 0; i < elementsCount; i++) {
+            printf("Enter element n.%zu: ", i + 1);
+            scanf("%d%*c", array + i);
+        }    
 
-    for (size_t i = 0; i < elementsCount; i++) {
-        printf("Enter element n.%zu: ", i + 1);
-        scanf("%d%*c", array + i);
-    }    
+        for (size_t i = 0; i < elementsCount; i++)
+            printf("%d ", array[i]); // *(array + i)
+        puts("");
 
-    for (size_t i = 0; i < elementsCount; i++)
-        printf("%d ", array[i]); // *(array + i)
-    puts("");
-
-    free(array);
-    array = NULL;
+        free(array);
+        array = NULL;
+    }
 
     return 0;
 }
