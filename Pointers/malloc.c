@@ -4,6 +4,7 @@
 
 int main() {
     int *p_x = (int *)malloc(sizeof(int)); // memory allocation
+    // int *p_x = (int *)calloc(1, sizeof(int));
 
     *p_x = 1;
     printf("Address: %p\n", &p_x);
