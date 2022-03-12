@@ -1,0 +1,2 @@
+1. Divide hotel program in 3 modules: main.c, hotel.c, apartment.c
+Hint: Don't forget about .h files (hotel.h, apartment.h)
