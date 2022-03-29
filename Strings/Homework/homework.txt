@@ -1,0 +1,4 @@
+1. Implement functions of <string.h>
+
+List of functions here:
+https://www.codesdope.com/blog/article/predefined-string-functions-of-c-in-stringh-librar/
